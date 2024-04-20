@@ -28,7 +28,7 @@ Open the **ModdingScene** from the folder **Scenes**. There are two example weap
 13. Now that you've finished setting up the weapon, drag it into the _ModWeaponFolder_ to create a prefab. Now you're ready to start bundling your mod up.
 14. Select the whole folder in the asset browser and in the bottom right under the inspector, there is a menu called AssetBundle.![image](https://github.com/Kubunautilus/BrutalistickVR_ModFramework/assets/167565930/2007ba4a-acc3-484b-b979-988986248e25)
 15. Click on that and select New...![image](https://github.com/Kubunautilus/BrutalistickVR_ModFramework/assets/167565930/005a68dc-18b6-479c-9634-762f25d166a9)
-16. Name your mod. It is highly recommended to put a little personal touch on it, like your username, since Asset Bundles with the same name will fail to load. For example, if you have two separate mods that are both named shortswordmod, it'll only load the first one in and the second will give an error. This issue can be minimized by naming your mod shortswordbykubunautilus.
+16. Name your mod. It is highly recommended to put a little personal touch on it, like your username, since Asset Bundles with the same name will fail to load. For example, if you have two separate mods that are both named shortswordmod, it'll only load the first one in and the second will give an error. This issue can be minimized by naming your mod something like shortswordbykubunautilus.
 17. Select Assets/Build Mod AssetBundles
     
 ![image](https://github.com/Kubunautilus/BrutalistickVR_ModFramework/assets/167565930/818581de-09df-4806-a5a4-cc5feca5fe08)
