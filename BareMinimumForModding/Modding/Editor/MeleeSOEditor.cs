@@ -75,7 +75,7 @@ public class MeleeScriptableObjectEditor : Editor
             EditorGUILayout.PropertyField(canStabberRunThrough);
             EditorGUILayout.EndHorizontal();
             serializedObject.ApplyModifiedProperties();
-            serializedObject.Update();
+            serializedObject.Update();            
         }
     }
 }
