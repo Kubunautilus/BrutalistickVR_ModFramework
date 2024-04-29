@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 001f2fc7487bc3c439b81c444c509b5a, type: 3}
+  m_Name: ClubHammer
+  m_EditorClassIdentifier: 
+  yourSteamId: 0
+  weaponName: Club Hammer
+  bloodTextureResolution: 64
+  meleeWeaponType: 1
+  grabHandAngleOffset: {x: 15, y: 0, z: 0}
+  shouldScaleInSocket: 0
+  damageThreshold: 8
+  bluntHitForceMultiplier: 2
+  minVelocityForBluntForceMultiplier: 1.5
+  hitSoundsType: 1
+  firstColliderAudioTag: Blunt
+  secondColliderAudioTag: Handle
+  firstColliderTagAudioClips:
+  - {fileID: 8300000, guid: 2ff65c9fb3514944dabd433d269807cd, type: 3}
+  - {fileID: 8300000, guid: 95e207dd43c86ff4ea1d097fba820a77, type: 3}
+  - {fileID: 8300000, guid: fc1c6ed824b288f43a52a7dcb3f7d59b, type: 3}
+  secondColliderTagAudioClips:
+  - {fileID: 8300000, guid: e8b921c5c90369545aadb63a6fe57d27, type: 3}
+  - {fileID: 8300000, guid: e6bb53589e786944e81fd6a757396141, type: 3}
+  - {fileID: 8300000, guid: b155a46c95141d74f93f39c81a8354a2, type: 3}
+  sliceThreshold: 15
+  slicePower: 0
+  stabberSharpness: 1
+  tipAndBaseCanStab: 0
+  canStabberRunThrough: 0

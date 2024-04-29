@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 001f2fc7487bc3c439b81c444c509b5a, type: 3}
+  m_Name: LongTrenchDaggerSO
+  m_EditorClassIdentifier: 
+  yourSteamId: 0
+  weaponName: Long Trench Dagger
+  bloodTextureResolution: 128
+  meleeWeaponType: 0
+  grabHandAngleOffset: {x: 15, y: 0, z: 0}
+  shouldScaleInSocket: 1
+  damageThreshold: 8
+  bluntHitForceMultiplier: 2
+  minVelocityForBluntForceMultiplier: 1.5
+  hitSoundsType: 1
+  firstColliderAudioTag: Sharp
+  secondColliderAudioTag: Handle
+  firstColliderTagAudioClips:
+  - {fileID: 8300000, guid: 59d33c11f7ab0e547b37c23774b978c9, type: 3}
+  - {fileID: 8300000, guid: 75f278c37432fea48a5dea48e64633e9, type: 3}
+  secondColliderTagAudioClips:
+  - {fileID: 8300000, guid: c217b7e13fd7e9f47b11a50bc9880e91, type: 3}
+  - {fileID: 8300000, guid: 6dd6f6c16d1750b4fba97dab1f323c4a, type: 3}
+  - {fileID: 8300000, guid: 52e452a997371e3478cf15152c7e654d, type: 3}
+  sliceThreshold: 20
+  slicePower: 0
+  stabberSharpness: 2
+  tipAndBaseCanStab: 0
+  canStabberRunThrough: 0

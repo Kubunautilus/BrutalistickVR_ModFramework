@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 001f2fc7487bc3c439b81c444c509b5a, type: 3}
+  m_Name: MeleeScriptableObject
+  m_EditorClassIdentifier: 
+  yourSteamId: 0
+  weaponName: Long Dagger
+  bloodTextureResolution: 128
+  meleeWeaponType: 0
+  grabHandAngleOffset: {x: 15, y: 0, z: 0}
+  shouldScaleInSocket: 1
+  damageThreshold: 8
+  bluntHitForceMultiplier: 2
+  minVelocityForBluntForceMultiplier: 1.5
+  hitSoundsType: 1
+  firstColliderAudioTag: Sharp
+  secondColliderAudioTag: Handle
+  firstColliderTagAudioClips:
+  - {fileID: 8300000, guid: 97725c87fd3fd72479fc2c1388834622, type: 3}
+  - {fileID: 8300000, guid: b8e9f211102911d44a759d79ff5c65db, type: 3}
+  secondColliderTagAudioClips:
+  - {fileID: 8300000, guid: ba8baa8acbe380049914ad7a55e44b35, type: 3}
+  - {fileID: 8300000, guid: 4950fd269b530e44ea1f5ef6eddd5ad5, type: 3}
+  - {fileID: 8300000, guid: 4ae1886c68a82c540b8c5eb5e0bb5ac6, type: 3}
+  sliceThreshold: 20
+  slicePower: 0
+  stabberSharpness: 2
+  tipAndBaseCanStab: 0
+  canStabberRunThrough: 0
