@@ -1,6 +1,6 @@
 # BRUTALISTICK VR Official Modding Framework
 ## Getting Started
-1. Install Unity on your PC, the current version used by the game is 2023.3.24f1 LTS.
+1. Install Unity on your PC, the current version used by the game is 2022.3.24f1 LTS.
 2. Create a new project, preferably with the Universal 3D template, although you can just manually add the Universal RP package from the Package Manager after launching the project.
 3. Download the BrutalistickVRModdingFramework.unitypackage and import it by dragging and dropping it into the open project or just double clicking the file.
 4. Make sure that under the Edit\Project Settings\Graphics Settings tab the Scriptable Render Pipeline Settings are set to URP-Brutalistick.
