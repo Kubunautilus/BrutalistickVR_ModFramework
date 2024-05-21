@@ -12,7 +12,7 @@ public class MeleeScriptableObject : ScriptableObject
     [Tooltip("Try to set this as low as possible without losing fidelity")]
     public TextureResolution bloodTextureResolution = TextureResolution.Texture64x64;
     public MeleeWeaponType meleeWeaponType;
-    public Vector3 grabHandAngleOffset = Vector3.zero;
+    public Vector3 grabHandAngleOffset = new Vector3(15f, 0f, 0f);
     [Tooltip("If the weapon doesn't fit in the weapon wall socket properly, for example if it covers text or overlaps other weapons, you should set this to true. Otherwise if the weapon is smaller than the socket's bounds, setting this to true causes it to be displayed as larger than it is when held.")]
     public bool shouldScaleInSocket = false;
     [Tooltip("This is the minimum force required for the hit to deal damage and cause bleeding.")]

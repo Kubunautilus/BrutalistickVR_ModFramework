@@ -11,6 +11,20 @@ public class MeleeWeaponWrapperEditor : Editor
         base.OnInspectorGUI();
         MeleeWeaponWrapper script = (MeleeWeaponWrapper)target;
         var serializedObject = new SerializedObject(target);
+        if (script.multipleGrabPoints)
+        {
+            EditorGUILayout.BeginHorizontal();
+            var multiGrabPoints = serializedObject.FindProperty("grabPointObjects");
+            multiGrabPoints.isExpanded = true;
+            EditorGUILayout.PropertyField(multiGrabPoints);
+            var multiGrabTopAndBottom = serializedObject.FindProperty("grabTopAndBottomObjects");
+            multiGrabTopAndBottom.isExpanded = true;
+            multiGrabTopAndBottom.arraySize = multiGrabPoints.arraySize;
+            EditorGUILayout.PropertyField(multiGrabTopAndBottom);
+            EditorGUILayout.EndHorizontal();
+            serializedObject.ApplyModifiedProperties();
+            serializedObject.Update();
+        }
         if (script.meleeWeaponSO != null)
         {
             if (script.meleeWeaponSO.meleeWeaponType == MeleeWeaponType.Sharp)
@@ -43,6 +57,23 @@ public class MeleeWeaponWrapperEditor : Editor
             multiStabLines.isExpanded = true;
             multiStabLines.arraySize = multiStabColliders.arraySize;
             EditorGUILayout.PropertyField(multiStabLines);
+            serializedObject.ApplyModifiedProperties();
+            EditorGUILayout.EndHorizontal();
+            serializedObject.ApplyModifiedProperties();
+            serializedObject.Update();
+        }
+        if (script.hasEvents)
+        {
+            EditorGUILayout.BeginHorizontal();
+            var secondaryClicked = serializedObject.FindProperty("onSecondaryClicked");
+            //multiStabColliders.isExpanded = true;
+            EditorGUILayout.PropertyField(secondaryClicked);
+            serializedObject.ApplyModifiedProperties();
+            EditorGUILayout.EndHorizontal();
+
+            EditorGUILayout.BeginHorizontal();
+            var secondaryReleased = serializedObject.FindProperty("onSecondaryReleased");
+            EditorGUILayout.PropertyField(secondaryReleased);
             serializedObject.ApplyModifiedProperties();
             EditorGUILayout.EndHorizontal();
             serializedObject.ApplyModifiedProperties();
