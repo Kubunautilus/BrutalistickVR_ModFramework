@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a4cced3410651941840b1ce95f4b138, type: 3}
+  m_Name: Pellet
+  m_EditorClassIdentifier: 
+  bulletCaliber: 12gauge
+  bulletHitForce: 15
+  bulletDamage: 20
+  minimumDamage: 0
+  penetrateCount: 0
+  exitWoundGoreSize: 0.03
+  exitWoundGoreChance: 0
+  instaGibLimbs: 0
+  instaGibLimbsChance: 20
+  instaGibBody: 0
+  instaGibBodyChance: 10
+  instaFractureProp: 0
+  instaFracturePropChance: 20
+  fractureChip: 2

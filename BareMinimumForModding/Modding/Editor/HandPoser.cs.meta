@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 1980867bab6b96a46a6919caff7a8383
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - m_ViewDataDictionary: {instanceID: 0}
+  - handPosingPrefab: {fileID: 8430341134246890156, guid: 22e3b35f619609d40a0f312637f0c8c9,
+      type: 3}
+  - grabPoint: {instanceID: 0}
+  - handPoseToLoad: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e15624f00ce36a41909e15f830b27f6, type: 3}
+  m_Name: Minigun
+  m_EditorClassIdentifier: 
+  yourSteamId: 0
+  weaponName: Minigun (modded)
+  firearmType: 2
+  maxRoundsPerMinute: 1500
+  slideCyclingTime: 0
+  bulletSpeed: 120
+  muzzleFlashScale: 1
+  useMuzzleSmoke: 0
+  muzzleSmokeScale: 1
+  muzzleSmokeIntensity: 6
+  requiresAmmo: 1
+  requiresChamberedRound: 0
+  automaticallyChamberNextRound: 1
+  ejectCasingAfterFiring: 1
+  lockBoltBackWhenEmpty: 1
+  upForce: 1
+  backwardsForce: 1.5
+  randomSideToSideRecoil: 1
+  sideToSideForce: 2
+  shouldScaleInSocket: 0
+  multipleBulletsPerRound: 0
+  bulletCountPerShot: 1
+  bulletSpread: 0.03
