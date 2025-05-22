@@ -22,6 +22,8 @@ MonoBehaviour:
   useMuzzleSmoke: 1
   muzzleSmokeScale: 1
   muzzleSmokeIntensity: 6
+  requiresAmmo: 1
+  requiresChamberedRound: 1
   automaticallyChamberNextRound: 0
   ejectCasingAfterFiring: 0
   lockBoltBackWhenEmpty: 0
@@ -30,3 +32,6 @@ MonoBehaviour:
   randomSideToSideRecoil: 1
   sideToSideForce: 4
   shouldScaleInSocket: 0
+  multipleBulletsPerRound: 0
+  bulletCountPerShot: 1
+  bulletSpread: 0.03
