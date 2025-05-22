@@ -26,7 +26,7 @@ public class ModFirearmWrapper : MonoBehaviour
     public GameObject magazineSocket;
     [Header("Audio Clips")]
     public AudioClip outOfAmmoAudio;
-    public AudioClip magazineLoadAudio;
+    public AudioClip magazineLoadAudio, magazineReleaseAudio;
     public List<AudioClip> firingAudio;
     /*[Header("Required for both Revolvers and Break-Actions")]
     public BulletWrapper bulletWrapper;*/

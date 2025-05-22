@@ -9,6 +9,7 @@ public class MagazineWrapper : MonoBehaviour
     public Transform firstRoundPos;
     public Vector3 roundDirection, progressiveDirectionChange;
     public Vector3 alternatingOffset;
+    public bool alternatingAppliesToFirstRound = false;
     public Vector3 progressiveRotation;
     public Vector3 firstBulletRotation;
     public bool useAutomaticPosing = false;

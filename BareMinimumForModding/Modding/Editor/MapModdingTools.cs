@@ -12,7 +12,7 @@ public class MapModdingTools : EditorWindow
     Vector2 scrollPos;
     [SerializeField]
     private MaterialNamesForObjectTypes extraMaterialNamesForObjectTypes;
-    [MenuItem("Modding Tools/Modding Tools Tab")]
+    [MenuItem("Modding Tools/Map Tools")]
     private static void Init()
     {
         var windowType = typeof(SceneView);

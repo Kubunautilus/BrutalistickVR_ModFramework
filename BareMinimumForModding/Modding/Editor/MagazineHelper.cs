@@ -27,6 +27,8 @@ public class MagazineHelper : EditorWindow
     [SerializeField]
     private Vector3 alternatingOffset;
     [SerializeField]
+    private bool alternatingAppliesToFirstRound;
+    [SerializeField]
     private Vector3 progressiveRotation;
     [SerializeField]
     private Vector3 firstRoundRotation;
@@ -49,6 +51,17 @@ public class MagazineHelper : EditorWindow
         scrollPos = EditorGUILayout.BeginScrollView(scrollPos);
         if (GUILayout.Button("Set First Round Position"))
         {
+            if (magazineObject != null) 
+            {
+                MagazineWrapper magWrapper = magazineObject.GetComponent<MagazineWrapper>();
+                if (magWrapper != null)
+                {
+                    if (magWrapper.firstRoundPos != null)
+                    {
+                        firstRoundPos = magWrapper.firstRoundPos;
+                    }
+                }
+            }
             if (firstRoundPos == null)
             {
                 GameObject firstRoundObj = new GameObject();
@@ -76,6 +89,8 @@ public class MagazineHelper : EditorWindow
         EditorGUILayout.PropertyField(progDirProperty, true);
         SerializedProperty altOffsetProperty = thisSerialized.FindProperty("alternatingOffset");
         EditorGUILayout.PropertyField(altOffsetProperty, true);
+        SerializedProperty altOffsetFirstRoundProperty = thisSerialized.FindProperty("alternatingAppliesToFirstRound");
+        EditorGUILayout.PropertyField(altOffsetFirstRoundProperty, true);
 
         SerializedProperty firstRotProperty = thisSerialized.FindProperty("firstRoundRotation");
         EditorGUILayout.PropertyField(firstRotProperty, true);
@@ -99,6 +114,7 @@ public class MagazineHelper : EditorWindow
             magWrapper.roundDirection = roundDirection;
             magWrapper.progressiveDirectionChange = progressiveDirectionChange;
             magWrapper.alternatingOffset = alternatingOffset;
+            magWrapper.alternatingAppliesToFirstRound = alternatingAppliesToFirstRound;
             magWrapper.firstBulletRotation = firstRoundRotation;
             magWrapper.progressiveRotation = progressiveRotation;
             for (int i = 0; i < instantiatedRounds.Length; i++)
@@ -132,7 +148,7 @@ public class MagazineHelper : EditorWindow
                 if (instantiatedRounds[i] != null)
                 {
                     firstRoundPos.rotation = Quaternion.Euler(Vector3.zero);
-                    if (i == 0)
+                    if (i == 0 && !alternatingAppliesToFirstRound)
                     {
                         instantiatedRounds[i].transform.position = firstRoundPos.position + offsetPerRound * i * (roundDirection + progressiveDirectionChange * i);
                         instantiatedRounds[i].transform.localRotation = Quaternion.Euler(firstRoundRotation + i * progressiveRotation);
