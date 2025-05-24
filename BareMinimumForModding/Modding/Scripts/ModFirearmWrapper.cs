@@ -41,6 +41,7 @@ public class ModFirearmWrapper : MonoBehaviour
     public bool multipleBarrels;
     public MultiBarrelStyle multiBarrelStyle;
     public Transform[] multiBarrelBulletOrigins;
+    public Transform[] multipleEjectionPorts;
     [Header("Gatling Barrel Options")]
     public GameObject rotatingBarrel;
     [Tooltip("Make sure the rotation speed matches the Rounds Per Minute to avoid desyncing.")]
@@ -98,7 +99,8 @@ public class ModFirearmWrapper : MonoBehaviour
     {
         Sequential,
         DualStageTrigger,
-        GatlingStyle
+        GatlingStyle,
+        Simultaneous
     }
 
 #if UNITY_EDITOR
