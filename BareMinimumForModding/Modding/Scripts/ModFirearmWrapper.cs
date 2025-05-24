@@ -17,9 +17,9 @@ public class ModFirearmWrapper : MonoBehaviour
     public GameObject chamberedRound, chamberedCasing;
     public GameObject ejectionPort;
     public Transform verticalRecoilPoint, backwardRecoilPoint;
-    
 
-    public Transform bulletOrigin; 
+
+    public Transform bulletOrigin;
     [Header("Magazine Properties")]
     public GameObject magazineTriggerCollider;
     public GameObject magGrabTriggerCollider, autoReleaseMagTriggerCollider;
@@ -42,6 +42,7 @@ public class ModFirearmWrapper : MonoBehaviour
     public MultiBarrelStyle multiBarrelStyle;
     public Transform[] multiBarrelBulletOrigins;
     public Transform[] multipleEjectionPorts;
+    public GameObject[] multipleChamberedRounds, multipleChamberedCasings;
     [Header("Gatling Barrel Options")]
     public GameObject rotatingBarrel;
     [Tooltip("Make sure the rotation speed matches the Rounds Per Minute to avoid desyncing.")]
@@ -108,7 +109,8 @@ public class ModFirearmWrapper : MonoBehaviour
     {
         if (magazineSocket != null)
         {
-            if (magazineSocket.transform.childCount > 0) {
+            if (magazineSocket.transform.childCount > 0)
+            {
                 if (Selection.activeGameObject == magazineSocket.transform.GetChild(0).gameObject)
                 {
                     GUIStyle style = new();
