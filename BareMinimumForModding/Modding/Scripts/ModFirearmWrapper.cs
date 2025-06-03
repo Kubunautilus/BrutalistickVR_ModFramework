@@ -24,6 +24,7 @@ public class ModFirearmWrapper : MonoBehaviour
     public GameObject magazineTriggerCollider;
     public GameObject magGrabTriggerCollider, autoReleaseMagTriggerCollider;
     public GameObject magazineSocket;
+    public bool magMustBeHeld = true;
     [Header("Audio Clips")]
     public AudioClip outOfAmmoAudio;
     public AudioClip magazineLoadAudio, magazineReleaseAudio;
