@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 001f2fc7487bc3c439b81c444c509b5a, type: 3}
   m_Name: LongTrenchDaggerSO
   m_EditorClassIdentifier: 
-  yourSteamId: 0
+  yourSteamId: 49528974
   weaponName: Long Trench Dagger
   bloodTextureResolution: 128
   meleeWeaponType: 0

@@ -74,6 +74,11 @@ public class MeleeScriptableObjectEditor : Editor
             var canStabberRunThrough = serializedObject.FindProperty("canStabberRunThrough");
             EditorGUILayout.PropertyField(canStabberRunThrough);
             EditorGUILayout.EndHorizontal();
+
+            EditorGUILayout.BeginHorizontal();
+            var slashingDamage = serializedObject.FindProperty("slashingDamage");
+            EditorGUILayout.PropertyField(slashingDamage);
+            EditorGUILayout.EndHorizontal();
             serializedObject.ApplyModifiedProperties();
             serializedObject.Update();            
         }
